@@ -15,6 +15,47 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
-**3** hola si ves que si se pude 
+**3** 
+- **Blob** Un objeto que guarda el contenido exacto de un archivo.
+    - No guarda el nombre del archivo ni su ubicación, solo los datos. 
+
+- **Tree** Representa la estructura de directorios.
+    - Contiene referencias a blobs y a otros trees y guarda metadatos como el nombre del archivo y los permisos.
+
+- **Commit** Un snapshot del proyecto en un momento dado.
+    - Apunta a un objeto tree que representa el estado completo de los archivos e
+    incluye metadatos como autor, fecha, mensaje de commit.
+
+- **Tag** Una etiqueta legible que apunta a un commit.
+    - - Puede ser ligero (solo un alias) o anotado (con mensaje, firma, fecha),
+    Se usa para marcar versiones importantes.
+
+---------------------------------------------------------------------------------------------
+
+**4** *Commmit:* Un commit en Git es el corazón del control de versiones: representa una instantánea del proyecto en un momento específico.
+
+- **¿como se crea?**
+    - **1** Editas archivos en tu working directory
+    - **2** Preparas los cambios con: 
+       - *git add "archivo.md"*
+    - **3** Comfirmas los cambios con:
+       - *git commit -m "Mensaje descriptivo de los cambios"*
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
