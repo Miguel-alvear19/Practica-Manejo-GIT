@@ -83,7 +83,16 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
-**8-** 
+**8-** **Cómo funciona el área de staging** Cuando editas archivos, los cambios quedan en el directorio de trabajo, al ejecutar **git add "archivo.txt"**, ese archivo para al staging area, que es como un borrador de tu proximo **commit** alli seleccionas exactamente que cambios quieres incluir. 
+
+**¿Que pasa si omito el git add?** Si corres git *commit* sin haber hecho *git add*, no se incluirán tus cambios y tus modificaciones seguirán en el directorio de trabajo, pero no quedarán registradas en el historial.
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
