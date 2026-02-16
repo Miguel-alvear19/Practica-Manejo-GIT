@@ -32,18 +32,22 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
-**4** *Commmit:* Un commit en Git es el corazón del control de versiones: representa una instantánea del proyecto en un momento específico.
+**4** *Commit:* Un commit en Git es el corazón del control de versiones: representa una instantánea del proyecto en un momento específico.
 
 - **¿como se crea?**
     - **1** Editas archivos en tu working directory
     - **2** Preparas los cambios con: 
        - *git add "archivo.md"*
-    - **3** Comfirmas los cambios con:
+    - **3** Confirmas los cambios con:
        - *git commit -m "Mensaje descriptivo de los cambios"*
 
 ---------------------------------------------------------------------------------------------
 
+**5** la diferencia entre el **git fetch** y el **git pull** es que el primero descargar los cambios del repositorio remoto pero no los aplica a tu rama local, te permite revisar primero que cambio antes de integrarlo. Por otro lado, el segundo descarga los cambios del repositorio remoto y los integra directamente en tu rama local, es mucho mas rapido pero tienes menos control que el primero.
 
+---------------------------------------------------------------------------------------------
+
+**6** 
 
 
 
