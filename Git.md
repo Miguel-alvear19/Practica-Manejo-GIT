@@ -43,11 +43,61 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
-**5** la diferencia entre el **git fetch** y el **git pull** es que el primero descargar los cambios del repositorio remoto pero no los aplica a tu rama local, te permite revisar primero que cambio antes de integrarlo. Por otro lado, el segundo descarga los cambios del repositorio remoto y los integra directamente en tu rama local, es mucho mas rapido pero tienes menos control que el primero.
+**5-** la diferencia entre el **git fetch** y el **git pull** es que el primero descargar los cambios del repositorio remoto pero no los aplica a tu rama local, te permite revisar primero que cambio antes de integrarlo. Por otro lado, el segundo descarga los cambios del repositorio remoto y los integra directamente en tu rama local, es mucho mas rapido pero tienes menos control que el primero.
 
 ---------------------------------------------------------------------------------------------
 
 **6** 
+- **branch** Es una línea de desarrollo independiente que apunta a un commit específico dentro del historial. Es como un marcador que indica “a partir de aquí quiero trabajar en paralelo”.
+
+- **¿Cómo gestiona Git los punteros a commits?** 
+    - **HEAD** apunta al commit actual en el que estás trabajando.
+    - *Nombre de la rama* (main) apunta al último commit de esa rama.
+- *Cuando haces un commit en una rama:*
+    - Git crea un nuevo objeto commit con su propio hash.
+    - La rama se actualiza para apuntar a ese nuevo commit.
+    - HEAD se mueve junto con la rama activa.
+
+---------------------------------------------------------------------------------------------
+
+**7-** *Como se realiza un merge* 
+- **1** Te posicionas en la rama donde quieres integrar los cambios:
+    - *git checkout main*
+- **2** Ejecutas el merge:
+    - *git merge feature*
+
+- **Conflictos que pueden surgir**
+    - Misma línea modificada
+    - Archivo eliminado o modificado
+    - Cambios en estructura de archivos
+
+- **Cómo resolver conflictos**
+    - **1** Detectar el conflicto
+    - **2** Editar manualmente
+       - Decide qué versión conservar (o combina ambas).
+       - Elimina los marcadores <<, ==, >>.
+    - **3** Marcar como resuelto
+       - *git add archivo_conflictivo*
+    - **4** Finalizar el merge 
+       - *git commit* 
+
+---------------------------------------------------------------------------------------------
+
+**8-** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
