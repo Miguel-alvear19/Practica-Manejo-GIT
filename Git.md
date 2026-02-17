@@ -117,7 +117,7 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
-**12** 
+**12** **Comandos para deshacer cambios**
 - **Git reset** Mueve el puntero HEAD a un commit anterior y ajusta el área de staging y/o el directorio de trabajo según la opción usada. 
     - *Uso típico*: Deshacer commits recientes o volver a un estado anterior en tu rama local.
 - **Git revert** Crea un nuevo commit que revierte los cambios introducidos por un commit específico.
@@ -126,6 +126,49 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
     - *- Uso típico*: Cambiar de contexto entre ramas o descartar modificaciones locales en archivos específicos.
 
 ---------------------------------------------------------------------------------------------
+
+**13** **Origin** > Es el remoto que apunta a tu fork (tu copia del repositorio en tu cuenta), se crea automáticamente cuando clonas tu fork.
+
+- **upstream** > Es el remoto que apunta al repositorio original del que hiciste el fork,
+lo configuras manualmente para poder sincronizar tu fork con el proyecto principal.
+
+#### Gestion de forks
+- *Clonar tu fork*
+    - **git clone https://github.com/TU-USUARIO/TU-FORK.git**
+      **cd TU-FORK**
+- *Agregar el remoto upstream*
+    - **git remote add upstream https://github.com/ORIGINAL-OWNER/REPO.git**
+- *Verificar remotos configurados*
+    - **git remote -v**
+- *Mantener tu fork sincronizado*
+    - **git fetch upstream**
+      **git checkout main**
+      **git merge upstream/main**
+
+---------------------------------------------------------------------------------------------
+
+**14** **Git log**
+- *Función*: Muestra el historial de commits en orden cronológico inverso (del más reciente  al más antiguo).
+- *Información que despliega*:
+    - Hash del commit (identificador único).
+    - Autor y fecha.
+    - Mensaje del commit.
+
+- **Git diff**
+- *Funcion*:Muestra las diferencias entre dos estados del repositorio.
+- *Usos comunes*
+    - **git diff** > cambios en el directorio de trabajo respecto al último commit.
+    - **git diff --staged** > cambios que ya están en staging respecto al último commit.
+    - **git diff commit1 commit2** > diferencias entre dos commits específicos.
+
+- **Git show**
+- *Funcion*: Muestra información detallada de un commit específico.
+- *Incluye*:
+    - Metadatos (autor, fecha, mensaje).
+    - Diferencias introducidas por ese commit
+
+---------------------------------------------------------------------------------------------
+
 
 
 
