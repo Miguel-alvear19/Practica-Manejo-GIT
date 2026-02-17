@@ -89,6 +89,23 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
+**9** **.Gitignore** es un archivo de configuración que se coloca en la raíz de un repositorio Git para indicar qué archivos o directorios deben ser ignorados por el sistema de control de versiones. Esto significa que Git no los incluirá en el seguimiento de cambios ni en las confirmaciones. 
+
+**Cómo influye en el seguimiento de archivos**
+- Git clasifica los archivos en 3 categorias:
+    - *Con seguimiento*: Archivos que ya han sido añadidos al repositorio y forman parte del historial.
+    - *Sin seguimiento*: - Archivos presentes en el directorio de trabajo pero que aún no se han agregado con **git add**
+    - *Ignorados*:- Archivos que se especifican en **.gitignore** para que Git los ignore por completo.
+
+---------------------------------------------------------------------------------------------
+
+**10** La diferencia entre un **commit--amend** y un nuevo commit, es que el primero lo que hace es modificar y reemplazar el commit anterior, por otro lado, el nuevo commit si crea otro commit adicional manteniendo el historial intacto y agregando un nuevo nodo. Cabe aclarar que si ya realizaste un **push** a un repositorio compartido, puede complicar la colaboración, porque reescribe el historial y obliga a otros a sincronizar con un historial diferente, por eso en esos casos es mejor realizar un nuevo commit.
+
+---------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
