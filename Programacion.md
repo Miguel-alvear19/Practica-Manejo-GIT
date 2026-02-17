@@ -93,6 +93,47 @@ Usar nombres significativos para variables y métodos es una práctica fundament
 
 ---------------------------------------------------------------------------------------------
 
+**20** 
+### Que es la Herencia en POO
+- La herencia en Programación Orientada a Objetos (POO) es un mecanismo que permite crear nuevas clases a partir de otras ya existentes, reutilizando sus atributos y métodos. En Java, es uno de los pilares fundamentales de la POO y se utiliza para establecer relaciones jerárquicas entre clases.
+
+### ¿Como se utiliza?
+
+- **Superclase**(clase padre): Es la clase original de la cual se heredan propiedades y comportamientos.
+- **Subclase**(clase hija): Es la clase que hereda de la superclase y puede añadir o modificar funcionalidades. 
+- **Extends**: Palabra clave utilizada para indicar que una clase hereda de otra. 
+- **@override**: Permite definir el comportamiento de un metodo heredado.
+
+---------------------------------------------------------------------------------------------
+
+**21** 
+### Modificadores de acceso 
+
+- En Java, los modificadores de acceso son palabras clave que definen el nivel de visibilidad y accesibilidad de clases, métodos, atributos y constructores. Son esenciales para aplicar el principio de encapsulamiento, uno de los pilares de la Programación Orientada a Objetos.
+
+### Modificadores mas comunes en Java
+
+- **Public**: Accesible desde cualquier clase, sin importar el paquete.
+- **Private**: Accesible solo dentro de la misma clase. Protege los datos internos.
+- **Protected**: Accesible dentro del mismo paquete y por subclases (incluso en otros paquetes).
+- **Default**: Accesible solo dentro del mismo paquete.
+
+---------------------------------------------------------------------------------------------
+
+**22** 
+### Variable de entorno
+- Una variable de entorno es un valor almacenado en el sistema operativo que puede ser accedido por programas y procesos durante su ejecución. Se utilizan para definir configuraciones externas al código, como rutas de archivos, credenciales o parámetros de ejecución, y son fundamentales para que las aplicaciones funcionen de manera flexible y segura.
+
+### Importancia
+- Permite difinir rutas, puertos o parametros sin modificar el codigo.
+- El mismo programa puede ejecutarse en distintos entornos cambiando solo las variables de entorno.
+- Se usan para almacenar credenciales o tokens sensibles, evitando que queden expuestos en el código.
+- Cambiar una variable es más sencillo que recompilar o editar múltiples archivos de código.
+
+---------------------------------------------------------------------------------------------
+
+
+
 
 
 
