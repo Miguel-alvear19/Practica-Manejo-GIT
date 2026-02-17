@@ -68,6 +68,33 @@ Usar nombres significativos para variables y métodos es una práctica fundament
 
 ---------------------------------------------------------------------------------------------
 
+**18** 
+### Programacion Orientada a Objetos (POO)
+- La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el software en torno a objetos, en lugar de funciones o procedimientos aislados. Cada objeto combina:
+- Datos (atributos o propiedades).
+- Comportamientos (métodos o funciones asociadas).
+
+---------------------------------------------------------------------------------------------
+
+**19** 
+### Los 4 Pilares de la POO 
+
+#### Encapsulamiento
+- Ocultar los detalles internos de una clase y exponer solo lo necesario mediante métodos públicos. Protege los datos y mejora la seguridad.
+
+#### Herencia 
+- Permite que una clase (hija) reutilice atributos y métodos de otra clase (padre). Favorece la reutilización y jerarquía.
+
+#### Abstraccion 
+- Simplificar la complejidad mostrando solo lo esencial. Se logra con clases abstractas e interfaces.
+
+#### Polimorfismo 
+- Capacidad de que un mismo método tenga diferentes comportamientos según el objeto que lo implemente.
+
+---------------------------------------------------------------------------------------------
+
+
+
 
 
 
