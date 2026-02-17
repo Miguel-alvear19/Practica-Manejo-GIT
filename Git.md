@@ -103,6 +103,38 @@ Un proyecto “normal” es solo una carpeta con archivos. Un repositorio Git es
 
 ---------------------------------------------------------------------------------------------
 
+**11** **Git stash**: Sirve para guardar temporalmente los cambios no confirmados (tanto los que están en staging como los que no) en una especie de “pila” llamada stash. Esto te permite limpiar tu directorio de trabajo y cambiar de rama o atender otra tarea sin necesidad de hacer un commit incompleto. Más tarde, puedes recuperar esos cambios y aplicarlos de nuevo.
+
+- **Como se utiliza el Git stash** 
+- *Guardar cambios actuales* 
+    - **Git stash** > Guarda todos los cambios pendientes y deja el directorio limpio.
+- *Listar los stashes guardados* 
+    - **Git stash list** > Muestra la pila de stashes con identificadores como **stash@{0}**.
+- *Aplicar un stash* 
+    - **Git stash apply stash@{0}** > Recupera los cambios guardados en ese stash específico (no lo elimina de la pila) 
+- *Aplicar y eliminar al mismo tiempo*
+    - **Git stash pop** > Aplica el ultimo stash y lo quita de la lista. 
+
+---------------------------------------------------------------------------------------------
+
+**12** 
+- **Git reset** Mueve el puntero HEAD a un commit anterior y ajusta el área de staging y/o el directorio de trabajo según la opción usada. 
+    - *Uso típico*: Deshacer commits recientes o volver a un estado anterior en tu rama local.
+- **Git revert** Crea un nuevo commit que revierte los cambios introducidos por un commit específico.
+    - *Uso típico*: Deshacer cambios en un repositorio compartido, porque es seguro y no rompe el historial que otros ya tienen.
+- **Git checkout** - Cambia de rama **git checkout nombre-rama**
+    - *- Uso típico*: Cambiar de contexto entre ramas o descartar modificaciones locales en archivos específicos.
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 
