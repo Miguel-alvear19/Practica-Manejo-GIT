@@ -10,11 +10,9 @@ public class ContadorPalabras {
         int vocales = 0;
         int consonantes = 0;
 
-        // Recorremos cada carácter de la palabra
         for (int i = 0; i < palabra.length(); i++) {
             char c = palabra.charAt(i);
 
-            // Verificamos si es vocal
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
                 vocales++;
             } else {
